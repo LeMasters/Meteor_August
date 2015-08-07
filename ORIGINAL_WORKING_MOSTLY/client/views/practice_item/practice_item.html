@@ -1,0 +1,9 @@
+<template name="PracticeItem">
+    <a href="{{pathFor 'practice.detail' params=this}}" class="list-group-item {{hasReadClass}}">
+      <span class="{{hasBeenReadIcon}}"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <span class="glyphicon glyphicon-share-alt"></span>
+      <span style="min-width: 120px; display: inline-block;" class="author">{{author}}</span>
+      <span class="subject">{{subject}}</span>
+      <span class="badge pull-right">{{time}}</span>
+    </a>
+</template>

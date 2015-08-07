@@ -1,0 +1,16 @@
+<template name="PracticeIndex">
+  <a href="{{pathFor 'practice.index'}}" class="btn btn-default btn-lg"><span class="glyphicon glyphicon-envelope"></span> <span class="inbox">&nbsp;Primary Inbox</span></a>
+  
+
+    <ul class="list-group">
+      {{#each practices}}
+      <li>
+        {{> PracticeItem}}
+      </li>
+      {{/each}}
+    </ul>
+
+
+  <!--<a href="{{pathFor 'practicequestions'}}"><button type="submit" class="btn btn-default btn-lg" name ="next">Next  <span class="glyphicon glyphicon-chevron-right"></span></button></a>-->
+  
+</template>
